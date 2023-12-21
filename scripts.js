@@ -1,13 +1,27 @@
-// if...else
 
-let temperature = 40
-let highTemperature = temperature >= 37.5
-let mediumTemperature = temperature < 37.5 && temperature >= 37
 
-if (highTemperature) {
-  console.log('Febre alta')
-} else if (mediumTemperature) {
-  console.log('febre moderada')
-} else {
-  console.log('saudavel')
+function calculate(number1, operator, number2) {
+  let result
+
+  switch (operator) {
+    case '+':
+      result = number1 + number2
+      break;
+    case '-':
+      result = number1 - number2
+      break
+    case '*':
+      result = number1 * number2
+      break
+    case '/':
+      result = number1 / number2
+      break
+
+    default:
+      console.log('nao implementado')
+      break;
+  }
+  return result
 }
+
+console.log(calculate(4, '', 8))
