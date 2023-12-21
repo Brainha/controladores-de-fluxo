@@ -1,27 +1,17 @@
+// throw
 
-
-function calculate(number1, operator, number2) {
-  let result
-
-  switch (operator) {
-    case '+':
-      result = number1 + number2
-      break;
-    case '-':
-      result = number1 - number2
-      break
-    case '*':
-      result = number1 * number2
-      break
-    case '/':
-      result = number1 / number2
-      break
-
-    default:
-      console.log('nao implementado')
-      break;
+function sayMyName(name = '') {
+  if (name === '') {
+    throw 'Nome e obrigatorio'
   }
-  return result
+  console.log(name)
 }
 
-console.log(calculate(4, '', 8))
+try {
+  sayMyName('braio')
+} catch (e) {
+  console.log(e)
+}
+
+console.log('apos a funcao de erro')
+// try...catch
