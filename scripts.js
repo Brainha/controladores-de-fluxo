@@ -1,8 +1,8 @@
-// Estrutura de repeticao
-// while
+// for...of
 
-let i = 0
-while (i < 10) {
-  console.log(i)
-  i++;
+let name = 'mayk'
+let names = ['Joao', 'Paulo', 'Pedro']
+
+for (let name of names) {
+  console.log(name)
 }
